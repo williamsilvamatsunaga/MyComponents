@@ -1,6 +1,7 @@
 :root{
     --prymary-color: #FF7833;
     --secondary-color: #31333B;
+    --secondary-color-light: #444856;
 }
 
 html{
@@ -19,6 +20,28 @@ body{
     background-color: #ccc;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
+    line-height: 1.7;
+}
+
+h1{
+    font-size: 4rem;
+    color: #c7c7c7;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+h2, h3, h4, h5, h6{
+    color: var(--prymary-color);
+    margin: 0;
+}
+
+h2{
+    margin-top: 1rem ;
+}
+
+article{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .main-header{
@@ -27,8 +50,9 @@ body{
 }
 
 .main{
-    background-color: #444856;
+    background-color: var(--secondary-color-light);
     flex: 1 0;
+    padding: 6.5rem 6rem 7.5rem;
 }
 
 a{
@@ -39,22 +63,34 @@ a{
     font-size: 1.6rem;
 }
 
-.ul-header{
-    padding: 2rem;
+.main-header-nav{
     text-align: right;
+    padding: 6.5rem 2.4rem 2.4rem;
 }
 
-.li-header{
-    padding: 1rem;
-    border-bottom: 2px solid black;
+.main-header-nav ul{
+    padding: 0;
     list-style-type: none;
 }
 
-.li-header a{
+.main-header-nav ul a{
+    display: block;
+    padding: 1.2rem 0;
     text-decoration: none;
+    transition: padding-right .2s, background-color .4s;
+    background-color: transparent;
 }
 
-.main-header-nav{
-    display: flex;
-    align-items: center;
+.main-header-nav ul a:hover{
+    background-color: var(--secondary-color-light);
+    padding-right: 1rem;
+}
+
+.li-header{
+    border-bottom: 1px solid #7b7b7b;
+    padding: .2rem 0;
+}
+
+.underline{
+    text-decoration: underline wavy red;
 }
