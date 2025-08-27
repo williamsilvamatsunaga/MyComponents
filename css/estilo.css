@@ -39,9 +39,15 @@ h2{
     margin-top: 1rem ;
 }
 
+.hightlight{
+    border-left: 1px solid var(--prymary-color);
+    font-size: 1.1em;
+    padding-left: 2em;
+    margin-bottom: 2.2em;
+}
+
 article{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1em 0;
 }
 
 .main-header{
@@ -81,7 +87,8 @@ a{
     background-color: transparent;
 }
 
-.main-header-nav ul a:hover{
+.main-header-nav ul a:hover,
+.main-header-nav ul a:focus{
     background-color: var(--secondary-color-light);
     padding-right: 1rem;
 }
@@ -93,4 +100,22 @@ a{
 
 .underline{
     text-decoration: underline wavy red;
+}
+
+.card{
+    max-width: 1920px;
+    background-color: var(--secondary-color);
+    padding: 0;
+}
+
+.card_content{
+    padding: .5em 1em 1em;
+}
+
+.card_content p, .card_title{
+    margin: 0;
+}
+
+.card_title{
+    font-size: 1.75em;
 }
