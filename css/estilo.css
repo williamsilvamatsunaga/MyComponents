@@ -42,12 +42,17 @@ h2{
 .hightlight{
     border-left: 1px solid var(--prymary-color);
     font-size: 1.1em;
-    padding-left: 2em;
+    
+    padding: 0 0 0 2em;
     margin-bottom: 2.2em;
 }
 
 article{
     padding: 1em 0;
+}
+
+section{
+    margin-bottom: 3rem;
 }
 
 .main-header{
@@ -103,7 +108,7 @@ a{
 }
 
 .card{
-    max-width: 1920px;
+    width: 75%;
     background-color: var(--secondary-color);
     padding: 0;
 }
@@ -118,4 +123,15 @@ a{
 
 .card_title{
     font-size: 1.75em;
+    margin-bottom: .25em;
+}
+
+.img_config{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    gap: 3rem;
+    padding-top: 1.5rem;
 }
